@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="wather.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location " class="input-box">
+                <button class="fa-solid fa-magnifying-glass-location" id="searchBtn"></button>
+            </div>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry,Location not found!!!</h1>
+            <img src="https://img.freepik.com/free-vector/error-404-concept-landing-page_52683-12188.jpg?w=740&t=st=1689425919~exp=1689426519~hmac=8959e7c917cd1d35cc5909bd291b8093d13a7e8fe8e8819bcc03172b7a38aca1" alt="error-404">
+        </div>
+        <div class="weather-body">
+            <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png?w=740&t=st=1689424844~exp=1689425444~hmac=957551cf613407e80a5af15a2a65bbb3a10ca8a55dddd2bc5edc43729ca5a795" alt="Weather image" class="weather-image">
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">💧
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+
+                    💨
+                    <div class="text">
+                        <span id="wind-speed">12km/H</span>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+    <script src="https://kit.fontawesome.com/45980bb3b2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
